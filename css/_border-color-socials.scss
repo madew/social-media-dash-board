@@ -1,0 +1,21 @@
+@mixin social-colors($args...) {
+  @each $name, $color in keywords($args) {
+    .--border-#{$name} {
+      border-top: 4px solid $color;
+    }
+  }
+}
+
+@include social-colors(
+  $facebook: hsl(195, 100%, 50%),
+  $twitter: hsl(203, 89%, 53%),
+  $youtube: hsl(348, 97%, 39%)
+);
+
+.--border-instagram {
+  background: linear-gradient($light-grayish-blue, $light-grayish-blue),
+    $instagram;
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat; /* this is important */
+  border-top: 4px solid transparent;
+}

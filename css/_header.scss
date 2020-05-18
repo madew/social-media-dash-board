@@ -1,0 +1,83 @@
+.header {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__wrapper {
+  }
+
+  &__title {
+    font-size: 1.625rem;
+    color: $very-dark-blue;
+  }
+
+  &__followers {
+    margin-top: 12px;
+
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: $dark-grayish-blue;
+  }
+
+  &__switch-theme {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: $toggle;
+
+    & label {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        display: block;
+        top: -4px;
+        left: -3.5rem;
+        width: 3rem;
+        height: 1.5rem;
+        content: "";
+        pointer-events: all;
+        background-color: $toggle;
+        border-radius: 0.875rem;
+
+        transition: background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+
+      &::after {
+        position: absolute;
+        display: block;
+        top: -2px;
+        left: calc(-3.5rem + 2px);
+        width: calc(1.5rem - 4px);
+        height: calc(1.5rem - 4px);
+        content: "";
+        background-color: $white;
+        border-radius: 0.875rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+
+        transition: transform 0.15s ease-in-out,
+          background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+      }
+    }
+
+    & #switch-theme {
+      padding: 0;
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+
+      &:checked ~ label::before {
+        color: #fff;
+        background-color: $lime-green;
+        background: $toggled;
+      }
+      &:checked ~ label::after {
+        background: $very-dark-blue;
+        transform: translateX(1.5rem);
+      }
+    }
+  }
+}

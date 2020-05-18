@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./dist/css/style.min.css" />
     <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -29,51 +29,52 @@
           <p class="header__followers">Total Followers: 23,004</p>
         </div>
         <div class="header__switch-theme">
-          Dark Mode
+          <input type="checkbox" id="switch-theme" />
+          <label for="switch-theme">Dark Mode</label>
         </div>
       </section>
 
       <section class="social">
-        <div class="social__card">
+        <div class="social__card --border-facebook">
           <h5 class="social__username">
             <img src="./dist/images/icon-facebook.svg" alt="facebook" />@nathanf
           </h5>
           <div class="social__no-followers">1987</div>
           <div class="social__followers">Followers</div>
-          <div class="social__trending">
+          <div class="social__trending --trending-top">
             <img src="./dist/images/icon-up.svg" alt="trending up" />12 Today
           </div>
         </div>
-        <div class="social__card">
-          <div class="social__username">
+        <div class="social__card --border-twitter">
+          <h5 class="social__username">
             <img src="./dist/images/icon-twitter.svg" alt="twitter" />@nathanf
-          </div>
+          </h5>
           <div class="social__no-followers">1044</div>
           <div class="social__followers">Followers</div>
-          <div class="social__trending">
+          <div class="social__trending --trending-top">
             <img src="./dist/images/icon-up.svg" alt="trending up" />99 Today
           </div>
         </div>
-        <div class="social__card">
-          <div class="social__username">
+        <div class="social__card --border-instagram">
+          <h5 class="social__username">
             <img
               src="./dist/images/icon-instagram.svg"
               alt="instagram"
             />@realnathanf
-          </div>
+          </h5>
           <div class="social__no-followers">11k</div>
           <div class="social__followers">Followers</div>
-          <div class="social__trending">
+          <div class="social__trending --trending-top">
             <img src="./dist/images/icon-up.svg" alt="trending up" />1099 Today
           </div>
         </div>
-        <div class="social__card">
-          <div class="social__username">
+        <div class="social__card --border-youtube">
+          <h5 class="social__username">
             <img src="./dist/images/icon-youtube.svg" alt="youtube" /> Nathan F.
-          </div>
+          </h5>
           <div class="social__no-followers">8239</div>
           <div class="social__followers">Subscribers</div>
-          <div class="social__trending">
+          <div class="social__trending --trending-down">
             <img src="./dist/images/icon-down.svg" alt="trending down" />144
             Today
           </div>
@@ -173,9 +174,6 @@
         </div>
       </section>
     </div>
-
-    87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375% Retweets 117 303%
-    Likes 507 553% Likes 107 19% Total Views 1407 12%
 
     <div class="attribution">
       Challenge by
