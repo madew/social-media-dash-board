@@ -1,84 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social Media Dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <title>Frontend Mentor | Social Media Dashboard</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="header">
+        <div class="header__wrapper">
+          <h1 class="header__title">Social Media Dashboard</h1>
+          <p class="header__followers">Total Followers: 23,004</p>
+        </div>
+        <div class="header__switch-theme">
+          Dark Mode
+        </div>
+      </section>
 
-</head>
-<body>
+      <section class="social">
+        <div class="social__panel">
+          <h5 class="social__username">
+            <img src="./images/icon-facebook.svg" alt="facebook" />@nathanf
+          </h5>
+          <div class="social__no-followers">1987</div>
+          <div class="social__followers">Followers</div>
+          <div class="social__trending">
+            <img src="./images/icon-up.svg" alt="trending up" />12 Today
+          </div>
+        </div>
+        <div class="social__panel">
+          <div class="social__username">
+            <img src="./images/icon-twitter.svg" alt="twitter" />@nathanf
+          </div>
+          <div class="social__no-followers">1044</div>
+          <div class="social__followers">Followers</div>
+          <div class="social__trending">
+            <img src="./images/icon-up.svg" alt="trending up" />99 Today
+          </div>
+        </div>
+        <div class="social__panel">
+          <div class="social__username">
+            <img
+              src="./images/icon-instagram.svg"
+              alt="instagram"
+            />@realnathanf
+          </div>
+          <div class="social__no-followers">11k</div>
+          <div class="social__followers">Followers</div>
+          <div class="social__trending">
+            <img src="./images/icon-up.svg" alt="trending up" />1099 Today
+          </div>
+        </div>
+        <div class="social__panel">
+          <div class="social__username">
+            <img src="./images/icon-youtube.svg" alt="youtube" /> Nathan F.
+          </div>
+          <div class="social__no-followers">8239</div>
+          <div class="social__followers">Subscribers</div>
+          <div class="social__trending">
+            <img src="./images/icon-down.svg" alt="trending down" />144 Today
+          </div>
+        </div>
+      </section>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+      <section class="overview">
+        <h2 class="overview__title">Overview - Today</h2>
+        <div class="overview__wrap">
+          <div class="overview__panel">
+            <h5 class="overview__panel-title">Page Views</h5>
+            <div class="overview__panel-social-icon">
+              <img src="./images/icon-facebook.svg" alt="facebook" />
+            </div>
+            <div class="overview__panel-number">87</div>
+            <div class="overview__panel-trend">
+              <img src="./images/icon-up.svg" alt="trending up" />3%
+            </div>
+          </div>
 
-  Dark Mode
+          <div class="overview__panel">
+            <h5 class="overview__panel-title">Likes</h5>
+            <div class="overview__panel-social-icon">
+              <img src="./images/icon-facebook.svg" alt="facebook" />
+            </div>
+            <div class="overview__panel-number">52</div>
+            <div class="overview__panel-trend">
+              <img src="./images/icon-down.svg" alt="trending down" />2%
+            </div>
+          </div>
 
-  
+          <div class="overview__panel">
+            <h5 class="overview__panel-title">Likes</h5>
+            <div class="overview__panel-social-icon">
+              <img src="./images/icon-instagram.svg" alt="instagram" />
+            </div>
+            <div class="overview__panel-number">5462</div>
+            <div class="overview__panel-trend">
+              <img src="./images/icon-up.svg" alt="trending up" />2257%
+            </div>
+          </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+          <div class="overview__panel">
+            <h5 class="overview__panel-title">Profile Views</h5>
+            <div class="overview__panel-social-icon">
+              <img src="./images/icon-instagram.svg" alt="instagram" />
+            </div>
+            <div class="overview__panel-number">52k</div>
+            <div class="overview__panel-trend">
+              <img src="./images/icon-up.svg" alt="trending up" />1375%
+            </div>
+          </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+          <div class="overview__panel">
+            <h5 class="overview__panel-title">Retweets</h5>
+            <div class="overview__panel-social-icon">
+              <img src="./images/icon-twitter.svg" alt="twitter" />
+            </div>
+            <div class="overview__panel-number">117</div>
+            <div class="overview__panel-trend">
+              <img src="./images/icon-up.svg" alt="trending up" />303%
+            </div>
+          </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+          <div class="overview__panel">
+            <h5 class="overview__panel-title">Likes</h5>
+            <div class="overview__panel-social-icon">
+              <img src="./images/icon-twitter.svg" alt="twitter" />
+            </div>
+            <div class="overview__panel-number">507</div>
+            <div class="overview__panel-trend">
+              <img src="./images/icon-up.svg" alt="trending up" />553%
+            </div>
+          </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+          <div class="overview__panel">
+            <h5 class="overview__panel-title">Likes</h5>
+            <div class="overview__panel-social-icon">
+              <img src="./images/icon-youtube.svg" alt="youtube" />
+            </div>
+            <div class="overview__panel-number">107</div>
+            <div class="overview__panel-trend">
+              <img src="./images/icon-down.svg" alt="trending down" />19%
+            </div>
+          </div>
 
+          <div class="overview__panel">
+            <h5 class="overview__panel-title">Total Views</h5>
+            <div class="overview__panel-social-icon">
+              <img src="./images/icon-youtube.svg" alt="youtube" />
+            </div>
+            <div class="overview__panel-number">1407</div>
+            <div class="overview__panel-trend">
+              <img src="./images/icon-down.svg" alt="trending down" />12%
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
+    87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375% Retweets 117 303%
+    Likes 507 553% Likes 107 19% Total Views 1407 12%
 
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Michał Antos</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Michał Antos</a>.
+    </div>
+  </body>
 </html>
