@@ -22,6 +22,7 @@
     <title>Frontend Mentor | Social Media Dashboard</title>
   </head>
   <body>
+    <div class="top-background"></div>
     <div class="wrap">
       <section class="header">
         <div class="header__wrapper">
@@ -85,101 +86,149 @@
         <h2 class="overview__title">Overview - Today</h2>
         <div class="overview__wrap">
           <div class="overview__card">
-            <h5 class="overview__card-title">Page Views</h5>
-            <div class="overview__card-social-icon">
-              <img src="./dist/images/icon-facebook.svg" alt="facebook" />
+            <div>
+              <h5 class="overview__card-title">Page Views</h5>
+              <img
+                class="overview__card-social-icon"
+                src="./dist/images/icon-facebook.svg"
+                alt="facebook"
+              />
             </div>
-            <div class="overview__card-number">87</div>
-            <div class="overview__card-trend">
-              <img src="./dist/images/icon-up.svg" alt="trending up" />3%
-            </div>
-          </div>
-
-          <div class="overview__card">
-            <h5 class="overview__card-title">Likes</h5>
-            <div class="overview__card-social-icon">
-              <img src="./dist/images/icon-facebook.svg" alt="facebook" />
-            </div>
-            <div class="overview__card-number">52</div>
-            <div class="overview__card-trend">
-              <img src="./dist/images/icon-down.svg" alt="trending down" />2%
+            <div>
+              <div class="overview__card-number">87</div>
+              <div class="overview__card-trend --trending-top">
+                <img src="./dist/images/icon-up.svg" alt="trending up" />3%
+              </div>
             </div>
           </div>
 
           <div class="overview__card">
-            <h5 class="overview__card-title">Likes</h5>
-            <div class="overview__card-social-icon">
-              <img src="./dist/images/icon-instagram.svg" alt="instagram" />
+            <div>
+              <h5 class="overview__card-title">Likes</h5>
+              <img
+                class="overview__card-social-icon"
+                src="./dist/images/icon-facebook.svg"
+                alt="facebook"
+              />
             </div>
-            <div class="overview__card-number">5462</div>
-            <div class="overview__card-trend">
-              <img src="./dist/images/icon-up.svg" alt="trending up" />2257%
-            </div>
-          </div>
-
-          <div class="overview__card">
-            <h5 class="overview__card-title">Profile Views</h5>
-            <div class="overview__card-social-icon">
-              <img src="./dist/images/icon-instagram.svg" alt="instagram" />
-            </div>
-            <div class="overview__card-number">52k</div>
-            <div class="overview__card-trend">
-              <img src="./dist/images/icon-up.svg" alt="trending up" />1375%
+            <div>
+              <div class="overview__card-number">52</div>
+              <div class="overview__card-trend --trending-down">
+                <img src="./dist/images/icon-down.svg" alt="trending down" />2%
+              </div>
             </div>
           </div>
 
           <div class="overview__card">
-            <h5 class="overview__card-title">Retweets</h5>
-            <div class="overview__card-social-icon">
-              <img src="./dist/images/icon-twitter.svg" alt="twitter" />
+            <div>
+              <h5 class="overview__card-title">Likes</h5>
+              <img
+                class="overview__card-social-icon"
+                src="./dist/images/icon-instagram.svg"
+                alt="instagram"
+              />
             </div>
-            <div class="overview__card-number">117</div>
-            <div class="overview__card-trend">
-              <img src="./dist/images/icon-up.svg" alt="trending up" />303%
-            </div>
-          </div>
-
-          <div class="overview__card">
-            <h5 class="overview__card-title">Likes</h5>
-            <div class="overview__card-social-icon">
-              <img src="./dist/images/icon-twitter.svg" alt="twitter" />
-            </div>
-            <div class="overview__card-number">507</div>
-            <div class="overview__card-trend">
-              <img src="./dist/images/icon-up.svg" alt="trending up" />553%
+            <div>
+              <div class="overview__card-number">5462</div>
+              <div class="overview__card-trend --trending-top">
+                <img src="./dist/images/icon-up.svg" alt="trending up" />2257%
+              </div>
             </div>
           </div>
 
           <div class="overview__card">
-            <h5 class="overview__card-title">Likes</h5>
-            <div class="overview__card-social-icon">
-              <img src="./dist/images/icon-youtube.svg" alt="youtube" />
+            <div>
+              <h5 class="overview__card-title">Profile Views</h5>
+              <img
+                class="overview__card-social-icon"
+                src="./dist/images/icon-instagram.svg"
+                alt="instagram"
+              />
             </div>
-            <div class="overview__card-number">107</div>
-            <div class="overview__card-trend">
-              <img src="./dist/images/icon-down.svg" alt="trending down" />19%
+            <div>
+              <div class="overview__card-number">52k</div>
+              <div class="overview__card-trend --trending-top">
+                <img src="./dist/images/icon-up.svg" alt="trending up" />1375%
+              </div>
             </div>
           </div>
 
           <div class="overview__card">
-            <h5 class="overview__card-title">Total Views</h5>
-            <div class="overview__card-social-icon">
-              <img src="./dist/images/icon-youtube.svg" alt="youtube" />
+            <div>
+              <h5 class="overview__card-title">Retweets</h5>
+              <img
+                class="overview__card-social-icon"
+                src="./dist/images/icon-twitter.svg"
+                alt="twitter"
+              />
             </div>
-            <div class="overview__card-number">1407</div>
-            <div class="overview__card-trend">
-              <img src="./dist/images/icon-down.svg" alt="trending down" />12%
+            <div>
+              <div class="overview__card-number">117</div>
+              <div class="overview__card-trend --trending-top">
+                <img src="./dist/images/icon-up.svg" alt="trending up" />303%
+              </div>
+            </div>
+          </div>
+
+          <div class="overview__card">
+            <div>
+              <h5 class="overview__card-title">Likes</h5>
+              <img
+                class="overview__card-social-icon"
+                src="./dist/images/icon-twitter.svg"
+                alt="twitter"
+              />
+            </div>
+            <div>
+              <div class="overview__card-number">507</div>
+              <div class="overview__card-trend --trending-top">
+                <img src="./dist/images/icon-up.svg" alt="trending up" />553%
+              </div>
+            </div>
+          </div>
+
+          <div class="overview__card">
+            <div>
+              <h5 class="overview__card-title">Likes</h5>
+              <img
+                class="overview__card-social-icon"
+                src="./dist/images/icon-youtube.svg"
+                alt="youtube"
+              />
+            </div>
+            <div>
+              <div class="overview__card-number">107</div>
+              <div class="overview__card-trend --trending-down">
+                <img src="./dist/images/icon-down.svg" alt="trending down" />19%
+              </div>
+            </div>
+          </div>
+
+          <div class="overview__card">
+            <div>
+              <h5 class="overview__card-title">Total Views</h5>
+              <img
+                class="overview__card-social-icon"
+                src="./dist/images/icon-youtube.svg"
+                alt="youtube"
+              />
+            </div>
+            <div>
+              <div class="overview__card-number">1407</div>
+              <div class="overview__card-trend --trending-down">
+                <img src="./dist/images/icon-down.svg" alt="trending down" />12%
+              </div>
             </div>
           </div>
         </div>
       </section>
     </div>
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Michał Antos</a>.
-    </div>
+    </div> -->
   </body>
 </html>

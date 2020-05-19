@@ -1,0 +1,60 @@
+.overview {
+  margin-top: 50px;
+
+  &__title {
+    font-size: 1.425rem;
+    color: $dark-grayish-blue;
+  }
+
+  &__wrap {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+  }
+
+  &__card {
+    background: $light-grayish-blue;
+    padding: 24px 30px 24px 24px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+
+    & > div {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-bottom: 26px;
+      }
+    }
+  }
+
+  &__card-title {
+    font-size: $cards-heading-font-size;
+    color: $dark-grayish-blue;
+  }
+
+  &__card-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $very-dark-blue;
+  }
+
+  &__card-trend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 24px 0;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    & img {
+      margin-right: 6px;
+    }
+  }
+}
