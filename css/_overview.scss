@@ -31,6 +31,11 @@
         margin-bottom: 26px;
       }
     }
+
+    &:hover {
+      cursor: pointer;
+      background: $light-gray;
+    }
   }
 
   &__card-title {

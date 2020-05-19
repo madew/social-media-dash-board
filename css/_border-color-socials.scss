@@ -18,4 +18,10 @@
   background-origin: padding-box, border-box;
   background-repeat: no-repeat; /* this is important */
   border-top: 4px solid transparent;
+
+  &:hover {
+    background: linear-gradient($light-gray, $light-gray), $instagram;
+    background-origin: padding-box, border-box;
+    background-repeat: no-repeat; /* this is important */
+  }
 }

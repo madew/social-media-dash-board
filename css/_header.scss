@@ -28,6 +28,10 @@
     & label {
       position: relative;
 
+      &:hover {
+        cursor: pointer;
+      }
+
       &::before {
         position: absolute;
         display: block;
