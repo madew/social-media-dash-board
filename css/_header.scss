@@ -9,7 +9,7 @@
 
   &__title {
     font-size: 1.625rem;
-    color: $very-dark-blue;
+    color: var(--header-text);
   }
 
   &__followers {
@@ -17,7 +17,7 @@
 
     font-size: 0.875rem;
     font-weight: 700;
-    color: $dark-grayish-blue;
+    color: var(--text);
   }
 
   &__switch-theme {

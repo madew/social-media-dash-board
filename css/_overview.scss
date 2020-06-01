@@ -3,7 +3,7 @@
 
   &__title {
     font-size: 1.425rem;
-    color: $dark-grayish-blue;
+    color: var(--header-text);
   }
 
   &__wrap {
@@ -15,7 +15,7 @@
   }
 
   &__card {
-    background: $light-grayish-blue;
+    background: var(--card-bg);
     padding: 24px 30px 24px 24px;
     border-radius: 4px;
     display: flex;
@@ -34,19 +34,19 @@
 
     &:hover {
       cursor: pointer;
-      background: $light-gray;
+      background: var(--card-bg-hover);
     }
   }
 
   &__card-title {
     font-size: $cards-heading-font-size;
-    color: $dark-grayish-blue;
+    color: var(--text);
   }
 
   &__card-number {
     font-size: 2rem;
     font-weight: 700;
-    color: $very-dark-blue;
+    color: var(--header-text);
   }
 
   &__card-trend {

@@ -4,6 +4,24 @@
 @import "overview";
 @import "border-color-socials";
 
+:root {
+  --bg-color: #{$white};
+  --top-bg-color: #{$very-pale-blue};
+  --header-text: #{$very-dark-blue};
+  --text: #{$dark-grayish-blue};
+  --card-bg: #{$light-grayish-blue};
+  --card-bg-hover: #{$light-gray};
+}
+
+[data-theme="dark"] {
+  --bg-color: #{$very-dark-blue};
+  --top-bg-color: #{$darker-blue};
+  --header-text: #{$white};
+  --text: #{$desaturated-blue};
+  --card-bg: #{$dark-desaturated-blue};
+  --card-bg-hover: #{$light-desaturated-blue};
+}
+
 * {
   box-sizing: border-box;
 }
@@ -19,7 +37,7 @@ p {
 }
 
 body {
-  background-color: $white;
+  background-color: var(--bg-color);
   font-family: $primary-font;
   margin: 0;
   padding: 0;
@@ -45,6 +63,6 @@ body {
   left: 0;
   width: 100%;
   height: 230px;
-  background: $very-pale-blue;
+  background: var(--top-bg-color);
   z-index: -1;
 }
