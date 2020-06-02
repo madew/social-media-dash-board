@@ -1,0 +1,13 @@
+.attribution {
+  padding: 10px;
+  border-radius: 4px;
+  margin: 20px 0;
+  background: var(--card-bg);
+
+  color: var(--text);
+  font-size: $cards-heading-font-size;
+
+  & a {
+    color: var(--header-text);
+  }
+}
