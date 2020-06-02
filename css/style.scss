@@ -1,8 +1,9 @@
-@import "variables";
-@import "header";
-@import "social";
-@import "overview";
-@import "border-color-socials";
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'social';
+@import 'overview';
+@import 'border-color-socials';
 
 :root {
   --bg-color: #{$white};
@@ -11,15 +12,17 @@
   --text: #{$dark-grayish-blue};
   --card-bg: #{$light-grayish-blue};
   --card-bg-hover: #{$light-gray};
+  --header-border-color: #{$dark-grayish-blue};
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   --bg-color: #{$very-dark-blue};
   --top-bg-color: #{$darker-blue};
   --header-text: #{$white};
   --text: #{$desaturated-blue};
   --card-bg: #{$dark-desaturated-blue};
   --card-bg-hover: #{$light-desaturated-blue};
+  --header-border-color: #{$desaturated-blue};
 }
 
 * {
@@ -65,4 +68,6 @@ body {
   height: 230px;
   background: var(--top-bg-color);
   z-index: -1;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }

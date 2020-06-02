@@ -1,6 +1,16 @@
 .social {
   margin-top: 50px;
   display: flex;
+  flex-direction: column;
+
+  @include atSmall {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @include atLarge {
+    flex-direction: row;
+  }
 
   &__card {
     flex: 1;
@@ -9,13 +19,43 @@
     background: var(--card-bg);
     border-radius: 4px;
 
+    @include atSmall {
+      flex: unset;
+      width: calc(50% - 1rem);
+      margin-bottom: 2rem;
+    }
+
+    @include atLarge {
+      flex: 1;
+      width: auto;
+      margin: 0;
+    }
+
     &:hover {
       cursor: pointer;
       background-color: var(--card-bg-hover);
     }
 
     &:not(:last-child) {
-      margin-right: 2rem;
+      margin: 0 0 2rem 0;
+
+      @include atSmall {
+        margin-bottom: 2rem;
+      }
+
+      @include atLarge {
+        margin: 0 2rem 0 0;
+      }
+    }
+
+    &:nth-child(odd) {
+      @include atSmall {
+        margin: 0 2rem 2rem 0;
+      }
+
+      @include atLarge {
+        margin: 0 2rem 0 0;
+      }
     }
   }
 

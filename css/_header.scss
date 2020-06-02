@@ -3,8 +3,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+
+  @include atLarge {
+    flex-direction: row;
+  }
 
   &__wrapper {
+    width: 100%;
+    border-bottom: 1px solid var(--header-border-color);
+    padding-bottom: 24px;
+
+    @include atLarge {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
   }
 
   &__title {
@@ -24,8 +37,17 @@
     font-size: 0.875rem;
     font-weight: 700;
     color: $toggle;
+    margin-top: 24px;
+    width: 100%;
+
+    @include atLarge {
+      margin-top: 0px;
+      width: 150px;
+    }
 
     & label {
+      display: inline-block;
+      width: 100%;
       position: relative;
 
       &:hover {
@@ -36,10 +58,10 @@
         position: absolute;
         display: block;
         top: -4px;
-        left: -3.5rem;
+        right: 0;
         width: 3rem;
         height: 1.5rem;
-        content: "";
+        content: '';
         pointer-events: all;
         background-color: $toggle;
         border-radius: 0.875rem;
@@ -52,10 +74,10 @@
         position: absolute;
         display: block;
         top: -2px;
-        left: calc(-3.5rem + 2px);
+        right: calc(1.5rem + 2px);
         width: calc(1.5rem - 4px);
         height: calc(1.5rem - 4px);
-        content: "";
+        content: '';
         background-color: $white;
         border-radius: 0.875rem;
         background-repeat: no-repeat;
