@@ -1,4 +1,4 @@
-![Screenshot of page](/Screenshot-Social-Media-Dashboard-Small.png)
+![Screenshot of page](https://github.com/madew/social-media-dash-board/blob/master/Screenshot-Social-Media-Dashboard-S.png)
 
 ### Social media dashboard with theme switcher.
 
