@@ -1,3 +1,8 @@
-###[Demo](http://sloppy-structure.surge.sh/)
+### Social media dashboard with theme switcher. 
+- HTML
+- SCSS
+- JS
 
-Social media dashboard with theme switcher. Design from [Frontend Mentor](https://www.frontendmentor.io)
+View [Demo](http://sloppy-structure.surge.sh/)
+
+Design from [Frontend Mentor](https://www.frontendmentor.io)
