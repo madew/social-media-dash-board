@@ -1,4 +1,7 @@
-### Social media dashboard with theme switcher. 
+![Screenshot of page](/Screenshot-Social-Media-Dashboard-Small.png)
+
+### Social media dashboard with theme switcher.
+
 - HTML
 - SCSS
 - JS
